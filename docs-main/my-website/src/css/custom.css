@@ -1,0 +1,127 @@
+/* DocSearch customizations */
+.DocSearch-Button {
+  width: 100%;
+  margin: 0;
+  border-radius: 8px !important;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  background: var(--ifm-color-emphasis-200) !important;
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.DocSearch-Button-Keys {
+  display: none;
+}
+
+/* Add keyboard shortcut handling */
+body {
+  --docsearch-searchbox-height: 40px;
+}
+
+/* You can override the default Infima variables here. */
+.header-hunter-link {
+  background: linear-gradient(135deg, #0066ff 0%, #00b8ff 100%);
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.header-hunter-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+}
+
+:root {
+  --ifm-font-family-base: 'Outfit', sans-serif;
+  --ifm-heading-font-family: 'Outfit', sans-serif;
+  --ifm-color-primary: #0D0D0D;
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #ffffff;
+  --ifm-link-color: #0D0D0D;
+  --ifm-menu-color: #0D0D0D;
+  --ifm-toc-link-color: #0D0D0D;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ffffff;
+  --ifm-background-color: #0D0D0D;
+  --ifm-navbar-background-color: #0D0D0D;
+  --ifm-footer-background-color: #0D0D0D;
+  --ifm-link-color: #ffffff;
+  --ifm-menu-color: #ffffff;
+  --ifm-toc-link-color: #ffffff;
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.DocSearch-Button {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.DocSearch-Button-Keys {
+  display: none !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-family: var(--ifm-font-family-base) !important;
+  font-size: 1rem !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.footer {
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.menu__link {
+  font-weight: 400;
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+.main-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
